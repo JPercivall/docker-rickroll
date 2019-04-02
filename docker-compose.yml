@@ -1,0 +1,11 @@
+version: '2'
+
+
+services:
+  malicious-service:
+    image: 'malicious-service:latest'
+    hostname: 'malicious-service'
+    restart: 'unless-stopped'
+    ports:
+      - '8081:80'
+      - '8082:8080'
